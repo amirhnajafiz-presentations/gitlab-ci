@@ -50,6 +50,23 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
 
+    <style>
+      .gitlab-text {
+        color: rgb(212, 138, 0) !important;
+      }
+
+      .github-text {
+        color: darkblue !important;
+      }
+
+      .gittea-text {
+        color: lightgreen !important;
+      }
+
+      .paper-text {
+        text-align: justify;
+      }
+    </style>
   </head>
   <body>
     <header role="banner">
@@ -125,9 +142,18 @@
         </section>
         <section>
           <div class="wrap size-75">
-            <h3>
+            <h3 style="margin-block-end: 25px;">
               Why Gitlab?
             </h3>
+            <p class="paper-text">
+              <span class="gitlab-text">GitLab</span> is an open source code repository and collaborative software development platform.
+              <span class="gitlab-text">GitLab</span> is free for individuals.
+              <span class="gitlab-text">GitLab</span> offers a location for online code storage and capabilities for issue tracking and CI/CD.
+              Since it's open source, it's popular between big companies, even better than other code repositories.
+            </p>
+            <p class="zoomIn" style="text-align: center;">
+              <img src="./static/images/architecture.webp" width="500" />
+            </p>
           </div>
         </section>
         <section>
@@ -135,6 +161,15 @@
             <h4>
               Other code repositories?
             </h4>
+            <p style="margin-block-start: 50px;">
+              <span class="github-text">GitHub</span>, <span class="gittea-text">GitTea</span>, Subversion, ...
+            </p>
+            <p class="paper-text">
+              The major difference between GitHub and GitLab is the platform each philosophy presents.
+              GitHub has higher availability and is more focused on infrastructure performance, while GitLab is more
+              focused on offering a features-based system with a centralized, integrated platform for web developers.
+              But they both provide a tool which helps developer team to change their application sufficiently.
+            </p>
           </div>
         </section>
         <section>
@@ -211,6 +246,13 @@
           <div class="wrap size-75">
             <h3>
               What's Next?
+            </h3>
+          </div>
+        </section>
+        <section>
+          <div class="wrap size-75">
+            <h3>
+              Resources
             </h3>
           </div>
         </section>
