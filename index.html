@@ -126,7 +126,7 @@
                 What is Gitlab Pipeline?
               </li>
               <li>
-                Execute programs on Gitlab Runner.
+                Execute jobs on Gitlab Runner.
               </li>
               <li>
                 How to build a CI?
@@ -253,8 +253,17 @@
         <section>
           <div class="wrap size-75">
             <h3 style="margin-block-end: 25px;">
-              Execute programs on Gitlab Runner.
+              Execute jobs on Gitlab Runner.
             </h3>
+            <p class="paper-text" style="margin-block-start: 50px;">
+              Each stage, creates a new job in Gitlab.
+              Gitlab Runner is an application that works with GitLab CI/CD to run the job in a pipeline.
+              It is open-source and written in Go Language.
+              It can also be run inside the Docker container or it can be deployed into a Kubernetes cluster.
+              The GitLab Runner receives instructions from the GitLab server in regards to which jobs to run.
+              Each runner must be registered with the GitLab server. Runner Executor, each Runner will define at
+              least one executor. An executor is essentially the environment where the job will be executed.
+            </p>
           </div>
         </section>
         <section>
