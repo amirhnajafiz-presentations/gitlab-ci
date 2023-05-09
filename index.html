@@ -284,9 +284,25 @@
         </section>
         <section>
           <div class="wrap size-75">
-            <h3 style="margin-block-end: 25px;">
+            <h3>
               How to build a CI?
             </h3>
+            <p class="paper-text" style="margin-block-start: 50px;">
+              Before you start, make sure you have:<br />
+              <ul>
+                <li>
+                  A project in GitLab that you would like to use CI/CD for.
+                </li>
+                <li>
+                  The Maintainer or Owner role for the project.
+                </li>
+              </ul>
+            </p>
+            <p class="paper-text">
+              In GitLab, runners are agents that run your CI/CD jobs. To view available runners <strong>Go to Settings > CI/CD and expand Runners</strong>.
+              Now create a <strong>.gitlab-ci.yml </strong>file. It is a YAML file where you specify instructions for GitLab CI/CD. In this file, you define
+              the structure and order of jobs that the runner should execute, and the decisions the runner should make when specific conditions are encountered.
+            </p>
           </div>
         </section>
         <section>
@@ -294,6 +310,21 @@
             <h4>
               Example
             </h4>
+            <pre><code>build-job:
+  stage: build
+  script:
+    - echo "Hello, $GITLAB_USER_LOGIN!"
+
+test-job1:
+  stage: test
+  script:
+    - echo "This job tests something"
+
+deploy-prod:
+  stage: deploy
+  script:
+    - echo "This job deploys something from the $CI_COMMIT_BRANCH branch."
+  environment: production</code></pre>
           </div>
         </section>
         <section>
